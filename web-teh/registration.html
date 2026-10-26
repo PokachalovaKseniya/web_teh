@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+</head>
+<body>
+
+    <h1>Форма регистрации студента</h1>
+
+    <form action="#" method="post">
+
+        <p>
+            <label for="fullname">ФИО:</label>
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Введите ФИО"
+                required
+            >
+        </p>
+
+        <p>
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@mail.ru"
+                required
+            >
+        </p>
+
+        <p>
+            <label for="password">Пароль:</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                required
+            >
+        </p>
+
+        <p>
+            <label for="birthdate">Дата рождения:</label>
+            <input
+                type="date"
+                id="birthdate"
+                name="birthdate"
+                required
+            >
+        </p>
+
+        <p>Пол:</p>
+
+        <label>
+            <input type="radio" name="gender" value="female" required>
+            Женский
+        </label>
+
+        <label>
+            <input type="radio" name="gender" value="male">
+            Мужской
+        </label>
+
+        <p>
+            <label for="direction">Направление подготовки:</label>
+
+            <select id="direction" name="direction" required>
+                <option value="">Выберите направление</option>
+                <option value="programming">Прикладная информатика</option>
+                <option value="informatics">Информационные системы и технологии</option>
+                <option value="information-systems">Информационная безопасность</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="comment">Комментарий:</label>
+        </p>
+
+        <textarea
+            id="comment"
+            name="comment"
+            rows="4"
+            cols="40"
+            placeholder="Введите комментарий"
+        ></textarea>
+
+        <p>
+            <label>
+                <input
+                    type="checkbox"
+                    name="consent"
+                    required
+                >
+                Я согласен(на) на обработку данных для учебной демонстрации
+            </label>
+        </p>
+
+        <button type="submit">Зарегистрироваться</button>
+
+    </form>
+
+</body>
+</html>
